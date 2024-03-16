@@ -1,0 +1,117 @@
+.cards {
+  display: flex;
+  flex-direction: column; /* Ensures vertical stacking */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically in the container */
+  padding: 4rem;
+  background: #5e5959;
+  color: #ffffff;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, #4e4a4a, #9e9a9a); /* Dark to light gradient */
+   
+  background-size: 
+    150px 150px, /* Size for the horizontal lines */
+    150px 150px, /* Size for the vertical lines, match horizontal if you want a square grid */
+    cover; /* Cover for the gradient */
+  background-position: center; /* Center the background elements */
+  background-repeat: 
+    repeat, /* Repeat the horizontal lines */
+    repeat, /* Repeat the vertical lines */
+    no-repeat; /* Do not repeat the gradient */
+  z-index: 1;
+}
+
+
+
+.cards__profile {
+  flex: 0 0 auto;
+  /* Do not grow or shrink */
+  margin-right: 2rem;
+  
+  
+  /* Space between the image and the info */
+}
+
+.profile__image {
+  width: 300px;
+  /* Adjust the size as needed */
+  height: 300px;
+  /* Adjust the size as needed */
+  border-radius: 50%;
+  /* Makes the image round */
+  object-fit: cover;
+  /* Ensures the image covers the area without stretching */
+}
+
+.cards__info {
+  flex: 1;
+  /* Take up the remaining space */
+  max-width: 600px;
+  /* Adjust the maximum width as needed */
+}
+
+.cards__info h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards__info h2 {
+  font-size: 1.8rem;
+  color: #f5b921;
+  margin-bottom: 1rem;
+}
+
+.cards__info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cards__info ul {
+  list-style-type: none;
+  /* Removes default list styling */
+  padding: 0;
+}
+
+.cards__info ul li {
+
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+
+.cards__info ul li::before {
+  
+  content: '•';
+  /* Bullet point character */
+  color: #f5b921;
+  /* Example bullet point color */
+  font-weight: bold;
+  /* Bold bullet points */
+  display: inline-block;
+  width: 1rem;
+  /* Fixed width for bullet points */
+  margin-right: 0.5rem;
+}
+.cards__logos {
+  display: flex;
+  justify-content: center; /* Center the logos horizontally */
+  align-items: center; /* Align the logos vertically */
+  gap: 2rem; /* Space between logos */
+  margin-top: 3rem; /* Space above the logos row */
+  flex-wrap: wrap; /* Allows logos to wrap if needed */
+  width: 100%; /* Ensures the logos section stretches across */
+}
+
+.logo__image {
+  margin-right: 4rem; /* Space between logos */
+  width: 250px; /* Adjust to your logo size */
+  height: auto; /* Keeps the aspect ratio */
+  object-fit: contain; /* Ensures logos are not distorted */
+}
+.cards__content {
+  display: flex; /* Aligns profile and info sections horizontally */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  width: 100%; /* Takes full width to align with the parent's center alignment */
+}

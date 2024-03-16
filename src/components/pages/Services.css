@@ -1,0 +1,67 @@
+.services-container {
+    /* Assuming you might want some overall styling for the container */
+    padding: 20px;
+
+    border-radius: 8px;
+    /* Rounded corners */
+
+    margin-bottom: 40px;
+    /* Space below the header */
+    text-align: center;
+    /* Center the text */
+    background-color: #5e5959;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #5e5959;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        
+
+    background-size:
+        150px 150px,
+        /* Size for the horizontal lines */
+        150px 150px,
+        /* Size for the vertical lines, match horizontal if you want a square grid */
+        cover;
+    /* Cover for your background image */
+    background-position: center;
+    /* Center the background image */
+    background-repeat:
+        repeat,
+        /* Repeat the horizontal lines */
+        repeat,
+        /* Repeat the vertical lines */
+        no-repeat;
+    /* Do not repeat the background image */
+    color: #fff;
+    z-index: 1;
+}
+
+
+
+.resume-header h1 {
+    margin-bottom: 0.5em;
+    /* Space below the heading */
+    color: #fff;
+    /* Slightly darker color for the heading */
+    font-size: 2.5rem;
+    /* Larger font size for the heading */
+}
+
+.resume-header p {
+    margin-bottom: 1em;
+    /* Space below each paragraph */
+    color: #fff;
+    /* Lighter text color for the paragraph */
+    font-size: 1rem;
+    /* Standard font size for the paragraph */
+}
+
+/* Additional styles for visual consistency */
+.resume-header p:last-child {
+    margin-bottom: 2rem;
+    /* Remove bottom margin from the last paragraph */
+}

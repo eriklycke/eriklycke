@@ -1,0 +1,12 @@
+.language-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    background-color: black;
+    color: white;
+    font-size: 3rem; /* Adjust size as needed */
+    font-family: Arial, sans-serif; /* Choose a font */
+  }
+  

@@ -1,0 +1,122 @@
+/* Adjust the typewriter font size, color, etc., as needed */
+.sign-up-content, .Typewriter {
+  font-size: 3em; /* Adjusted size */
+  color: #fff; /* Text color */
+  font-family: 'PT Sans', sans-serif; /* Font family */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  padding-top: 50px;
+  /* No need to specify text-align here as the flexbox settings of the container will center the component */
+}
+.contact-container {
+  width: 100%;
+  padding: 1rem;
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjust this as needed */
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 
+    150px 150px, /* Size for the horizontal lines */
+    150px 150px, /* Size for the vertical lines, match horizontal if you want a square grid */
+    cover; /* Cover for your background image */
+  background-position: center; /* Center the background image */
+  background-repeat: 
+    repeat, /* Repeat the horizontal lines */
+    repeat, /* Repeat the vertical lines */
+    no-repeat; /* Do not repeat the background image */
+  color: #fff;
+  z-index: 1;
+  
+}
+
+
+.contact-title {
+    font-size: 3rem; /* Increase the size of the 'Contact me' text */
+    margin-bottom: 2rem; /* Space below the 'Contact me' text */
+    white-space: nowrap; /* Prevents wrapping */
+    
+    
+}
+
+.contact-content {
+    display: flex;
+    gap: 2rem; /* Increase gap between elements */
+    
+    
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    order: 2; /* Ensure the profile picture is always on the right */
+    
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; /* Center children vertically */
+    gap: 4rem; /* Spacing between items */
+    color: white;
+    order: 1; /* Ensures this content is to the left */
+    max-width: 800px; /* Adjust this as necessary */
+    font-size: 1.5em;
+    /* Optional: adds rounded corners to the container */
+}
+/* Style individual blocks of information */
+.contact-details, .business-details {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem; 
+    white-space: nowrap; /* Prevents wrapping */
+}
+.social-icons {
+    display: flex;
+    gap: 4rem; /* Increase gap between icons */
+    align-items: center;
+    margin-left: 7rem; /* Space to the left of the social icons */
+    font-size: 2rem; /* Increase size of icons */
+    margin-top: 5rem; /* Space above the social icons */
+}
+.social-icon-link i {
+    font-size: 4rem; /* Or whatever size you prefer */
+}
+/* Optional: Adjust the font size and line-height for each block */
+.contact-details p,
+.business-details p {
+    font-size: 0.875em; /* Example font size, adjust as needed */
+    line-height: 1.5; /* Example line height, adjust as needed */
+}
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will push the .contact-container to the bottom */
+  align-items: center; /* Keep this if you want to center the contents horizontally */
+  width: 100%;
+  min-height: 100vh;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    url('../../images/nature-7870374.jpg'); /* Your existing background image */
+  background-size: 
+    150px 150px, /* Size for the horizontal lines */
+    150px 150px, /* Size for the vertical lines, match horizontal if you want a square grid */
+    cover; /* Cover for your background image */
+  background-position: center; /* Center the background image */
+  background-repeat: 
+    repeat, /* Repeat the horizontal lines */
+    repeat, /* Repeat the vertical lines */
+    no-repeat; /* Do not repeat the background image */
+  color: #fff;
+  z-index: 1;
+}
+

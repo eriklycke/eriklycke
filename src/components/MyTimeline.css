@@ -1,0 +1,36 @@
+.timeline-container {
+    /* Other styles... */
+    background-color: #5e5959; /* Assuming a dark background similar to space grey */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    
+  background-size: 
+    150px 150px, /* Size for the horizontal lines */
+    150px 150px, /* Size for the vertical lines, match horizontal if you want a square grid */
+    cover; /* Cover for your background image */
+  background-position: center; /* Center the background image */
+  background-repeat: 
+    repeat, /* Repeat the horizontal lines */
+    repeat, /* Repeat the vertical lines */
+    no-repeat; /* Do not repeat the background image */
+  color: #fff;
+  z-index: 1;
+  }
+  
+  .VerticalTimeline {
+    position: relative;
+    z-index: 2;
+  }
+  
