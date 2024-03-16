@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/eriklycke/static/css/main.4499537d.css",
-    "main.js": "/eriklycke/static/js/main.96ac9b38.js",
+    "main.js": "/eriklycke/static/js/main.ef8f10cc.js",
     "static/media/aurora-1197753.jpg": "/eriklycke/static/media/aurora-1197753.01d2c9a0801bbbfff338.jpg",
     "static/media/morning-4411421.jpg": "/eriklycke/static/media/morning-4411421.9125538dc6259095348c.jpg",
     "static/media/nature-7870374.jpg": "/eriklycke/static/media/nature-7870374.15cfade382faf80f2762.jpg",
@@ -11,10 +11,10 @@
     "static/media/lund-university-logo-7E5D6EC6C4-seeklogo.com.png": "/eriklycke/static/media/lund-university-logo-7E5D6EC6C4-seeklogo.com.26314261963372a3e52e.png",
     "index.html": "/eriklycke/index.html",
     "main.4499537d.css.map": "/eriklycke/static/css/main.4499537d.css.map",
-    "main.96ac9b38.js.map": "/eriklycke/static/js/main.96ac9b38.js.map"
+    "main.ef8f10cc.js.map": "/eriklycke/static/js/main.ef8f10cc.js.map"
   },
   "entrypoints": [
     "static/css/main.4499537d.css",
-    "static/js/main.96ac9b38.js"
+    "static/js/main.ef8f10cc.js"
   ]
 }
